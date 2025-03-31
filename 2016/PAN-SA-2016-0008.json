@@ -1,0 +1,71 @@
+{
+	"id": "PAN-SA-2016-0008",
+	"title": "PAN-OS API denial of service",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "Palo Alto Networks firewalls offer an API to query and modify the configuration of the device. While access to this API is protected by the use of an API key, an issue was recently identified leading to a potential unauthenticated denial of service attack. (Ref #91728)\nThe API is hosted on a dedicated management interface and, while this issue can result in a DoS attack of the API, it doesn’t compromise the security functionality of the device.\nThis issue affects PAN-OS 7.0.1 to PAN-OS 7.0.7"
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "PAN-OS 7.0.8 and later"
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "Exploitation of this issue is only available to personnel with access to the management interface on the device. Palo Alto Networks recommends the following best practice implementation: deploy the management interface on an out-of-band network and separate from inline traffic processing."
+		}
+	],
+	"severity": "MEDIUM",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"AV": "NETWORK",
+	"AC": "LOW",
+	"PR": "NONE",
+	"UI": "NONE",
+	"C": "NONE",
+	"I": "NONE",
+	"A": "LOW",
+	"product": [
+		"PAN-OS"
+	],
+	"version": [
+		"PAN-OS 7.0"
+	],
+	"affected": [
+		">= 7.0.1, <= 7.0.7"
+	],
+	"affected_list": [
+		"PAN-OS 7.0.19",
+		"PAN-OS 7.0.18",
+		"PAN-OS 7.0.17",
+		"PAN-OS 7.0.16",
+		"PAN-OS 7.0.15",
+		"PAN-OS 7.0.14",
+		"PAN-OS 7.0.13",
+		"PAN-OS 7.0.12",
+		"PAN-OS 7.0.11",
+		"PAN-OS 7.0.10",
+		"PAN-OS 7.0.9",
+		"PAN-OS 7.0.8",
+		"PAN-OS 7.0.7",
+		"PAN-OS 7.0.6",
+		"PAN-OS 7.0.5-h2",
+		"PAN-OS 7.0.5-h1",
+		"PAN-OS 7.0.5",
+		"PAN-OS 7.0.4",
+		"PAN-OS 7.0.3",
+		"PAN-OS 7.0.2",
+		"PAN-OS 7.0.1",
+		"PAN-OS 7.0"
+	],
+	"fixed": [
+		">= 7.0.8"
+	],
+	"date": "2016-06-27T17:30:00.000Z",
+	"updated": "2016-06-27T17:30:00.000Z"
+}

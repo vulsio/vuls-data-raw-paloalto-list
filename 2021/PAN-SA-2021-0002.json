@@ -1,0 +1,52 @@
+{
+	"id": "PAN-SA-2021-0002",
+	"title": "Informational: PAN-OS: NAT slipstreaming v1.0 and v2.0 attacks",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "Network address translation (NAT) slipstreaming attacks v1.0 and v2.0 are network-based and they exploit weaknesses in web browsers and Application Level Gateways (ALGs) to expose internal network devices to an attacker."
+		},
+		{
+			"lang": "en",
+			"value": "The following threat prevention signatures prevent NAT slipstreaming attacks:\nNAT Slipstreaming Detection (59667)\nNAT Slipstreaming Detection (59668)\nNAT Slipstreaming Detection (59669)\nNAT Slipstreaming Detection (59671)\nNAT Slipstreaming Detection (59672)\n"
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "The following threat prevention signatures block all known risks of NAT slipstreaming attacks:\n\nNAT Slipstreaming Detection (59667)\nNAT Slipstreaming Detection (59668)\nNAT Slipstreaming Detection (59669)\nNAT Slipstreaming Detection (59671)\nNAT Slipstreaming Detection (59672)\n\nA PAN-OS software upgrade is not required to mitigate NAT slipstreaming attacks.\n"
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "If the threat prevention signatures cannot be applied or for additional protection:\n\nMany web browsers include a security fix that prevents NAT slipstreaming attacks. These are known to include:\n\nChrome v87.0.4280.141 and later versions;\nMicrosoft’s Edge v87.0.664.75 and later versions;\nSafari v14.0.3 and later versions;\nFirefox v85.0 and later versions.\n\nNAT Slipstreaming v2.0 attacks leverage H.323 and can be blocked by disallowing STUN application traffic in the PAN-OS appliance configuration."
+		}
+	],
+	"severity": "NONE",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": false,
+	"AV": "NETWORK",
+	"AC": "LOW",
+	"PR": "NONE",
+	"UI": "NONE",
+	"C": "NONE",
+	"I": "NONE",
+	"A": "NONE",
+	"product": [
+		"PAN-OS"
+	],
+	"version": [
+		"PAN-OS "
+	],
+	"affected": [
+		""
+	],
+	"fixed": [
+		"All"
+	],
+	"date": "2021-02-10T17:00:00.000Z",
+	"updated": "2021-03-10T17:00:00.000Z"
+}

@@ -1,0 +1,52 @@
+{
+	"id": "PAN-SA-2022-0005",
+	"title": "Informational: Cortex XDR Agent: Product Disruption by Local Windows Administrator",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "The Palo Alto Networks Product Security Assurance team is aware of a method that can enable a local administrator to tamper with the Windows registry to disable the Cortex XDR agent on devices running a Windows operating system.\n\nAs a result of this method, critical Windows system services would not be available and normal usage of the device would be disrupted. Please note, the device must be rebooted for this to take effect.\n\nThis issue is not a new security impact on the confidentiality, integrity, or availability of the system because a local Windows administrator has the ability to disrupt normal usage of the device without employing this method."
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "This method is prevented by Cortex XDR agents on Windows with content update 860 and later content update versions."
+		}
+	],
+	"severity": "NONE",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": false,
+	"AV": "PHYSICAL",
+	"AC": "HIGH",
+	"PR": "HIGH",
+	"UI": "REQUIRED",
+	"C": "NONE",
+	"I": "NONE",
+	"A": "NONE",
+	"product": [
+		"Cortex XDR Agent",
+		"Cortex XDR Agent"
+	],
+	"version": [
+		"Cortex XDR Agent "
+	],
+	"affected": [
+		"All agents with a content update earlier than CU-860 on Windows"
+	],
+	"affected_list": [
+		"Cortex XDR Agent 7.7",
+		"Cortex XDR Agent 7.6",
+		"Cortex XDR Agent 7.5 CE",
+		"Cortex XDR Agent 7.5",
+		"Cortex XDR Agent 7.4",
+		"Cortex XDR Agent 6.1",
+		"Cortex XDR Agent"
+	],
+	"fixed": [
+		"All agents with CU-860 or a later content update"
+	],
+	"date": "2022-09-14T16:00:00.000Z",
+	"updated": "2023-03-08T17:00:00.000Z"
+}

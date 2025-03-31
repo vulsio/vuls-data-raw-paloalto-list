@@ -1,0 +1,50 @@
+{
+	"id": "PAN-SA-2025-0005",
+	"title": "GlobalProtect Clientless VPN: Clientless VPN Misconfiguration Allows Cross-Site Attacks",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "Palo Alto Networks GlobalProtect Clientless VPN is intended to provide secure remote access to trusted internal applications. It is not meant to provide access to the Internet, intranet or multiple websites.\n\nWhen the Clientless VPN is misconfigured to allow access to the Internet or any internal website, it allows malicious scripts on one site to obtain sensitive information or modify content of any application accessible through the VPN including Clientless VPN itself.\n\nFor further details about the risks of Clientless VPNs please refer to https://www.kb.cert.org/vuls/id/261869\n\n"
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "The Clientless VPN feature only ensures secure remote access to a single trusted application. Ensure that the Clientless VPN access is limited by Security Policies to a single trusted site. Refer to the Configure Clientless VPN page for additional details.\nFor accessing multiple applications, since the Same-Origin Policy is not enforced, we strongly recommend configuring access to only trusted pages through Clientless VPN.\nClientless VPN should never be used to allow access to the internet or intranet. If you need to secure access to untrusted websites, please consider the following alternatives:\n\n * GlobalProtect App (https://docs.paloaltonetworks.com/globalprotect)\n * Supported Third Party VPN Client (https://docs.paloaltonetworks.com/compatibility-matrix/reference/globalprotect/what-x-auth-ipsec-clients-are-supported)\n * Prisma Access Browser (https://docs.paloaltonetworks.com/prisma-access-browser)\n * Web Proxy (https://docs.paloaltonetworks.com/pan-os/11-0/pan-os-new-features/networking-features/web-proxy) (Note: Web Proxy can only be used to improve web browsing safety. It cannot be used as a VPN.)"
+		}
+	],
+	"severity": "NONE",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": false,
+	"AV": "PHYSICAL",
+	"AC": "HIGH",
+	"PR": "HIGH",
+	"UI": "ACTIVE",
+	"C": "product:NONE subsequent:NONE",
+	"I": "product:NONE subsequent:NONE",
+	"A": "product:NONE subsequent:NONE",
+	"product": [
+		"Cloud NGFW",
+		"PAN-OS",
+		"Prisma Access"
+	],
+	"version": [
+		"Cloud NGFW",
+		"PAN-OS",
+		"Prisma Access"
+	],
+	"affected": [
+		"None",
+		"All",
+		"All"
+	],
+	"fixed": [
+		"All",
+		"None",
+		"None"
+	],
+	"date": "2025-02-12T17:00:00.000Z",
+	"updated": "2025-02-12T17:00:00.000Z"
+}

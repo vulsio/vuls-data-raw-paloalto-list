@@ -1,0 +1,58 @@
+{
+	"id": "PAN-SA-2014-0001",
+	"title": "Management API Key Bypass",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "An XML API key can be bypassed if a session has been authorized. This can be used in a CSRF or XSS attack.  (Ref # 58976)\nThis issue requires an authenticated administrator session to be successful.\nThis issue affects PAN-OS version 4.1.15 and earlier; 5.0.9 and earlier; 5.1.4 and earlier."
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "PAN-OS 4.1.16; 5.0.10 and 5.1.5 address this issue."
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "This issue affects the management interface of the device. Security appliance management best practices dictate that the management interface be isolated and strictly limited only to security administration personnel."
+		}
+	],
+	"severity": "MEDIUM",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"AV": "NETWORK",
+	"AC": "HIGH",
+	"PR": "NONE",
+	"UI": "REQUIRED",
+	"C": "NONE",
+	"I": "HIGH",
+	"A": "NONE",
+	"product": [
+		"PAN-OS"
+	],
+	"version": [
+		"PAN-OS 5.1",
+		"PAN-OS 5.0",
+		"PAN-OS 4.1"
+	],
+	"affected": [
+		"<= 5.1.4",
+		"<= 5.0.9",
+		"<= 4.1.15"
+	],
+	"affected_list": [
+		"PAN-OS 5.1",
+		"PAN-OS 5.0",
+		"PAN-OS 4.1"
+	],
+	"fixed": [
+		">= 5.1.5",
+		">= 5.0.10",
+		">= 4.1.16"
+	],
+	"date": "2014-01-29T23:00:00.000Z",
+	"updated": "2014-01-29T23:00:00.000Z"
+}

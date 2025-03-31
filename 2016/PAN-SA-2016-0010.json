@@ -1,0 +1,50 @@
+{
+	"id": "PAN-SA-2016-0010",
+	"title": "Update Server API Exposure",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "The Palo Alto Networks update server enables downloading of PAN-OS software releases and dynamic updates through a public API. Some functions of the API were inadvertently exposed to the public. \nAPI functions publicly available and exclusively used by internal workflow allowed for remote call. This did not affect Palo Alto Networks customers’ security posture, but some Palo Alto Networks update server data could be accessed.\nThis issue affects Palo Alto Networks update server"
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "N/A"
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "API functions that are utilized only by Palo Alto Networks backend systems have been migrated to an internal-facing only server. Externally facing functions that were deprecated or unused have been removed from the public-facing server."
+		}
+	],
+	"severity": "NONE",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"AV": "NETWORK",
+	"AC": "LOW",
+	"PR": "NONE",
+	"UI": "NONE",
+	"C": "NONE",
+	"I": "NONE",
+	"A": "NONE",
+	"product": [
+		"Update server"
+	],
+	"version": [
+		"Update server "
+	],
+	"affected": [
+		"None"
+	],
+	"affected_list": [
+		"Update server"
+	],
+	"fixed": [
+		""
+	],
+	"date": "2016-07-01T18:00:00.000Z",
+	"updated": "2016-07-01T18:00:00.000Z"
+}

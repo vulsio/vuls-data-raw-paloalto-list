@@ -1,0 +1,48 @@
+{
+	"id": "PAN-SA-2021-0001",
+	"title": "Informational: Cortex XSOAR: Impact of Golang XML parsing vulnerabilities",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "The Palo Alto Networks Product Security Assurance team evaluated the vulnerabilities (CVE-2020-29509, CVE-2020-29510, and CVE-2020-29511) that impact the standard Golang XML parsing library.\n\nAll versions of Cortex XSOAR use a version of Golang that contains these vulnerabilities but there are no scenarios for successful exploitation of them in Cortex XSOAR.\n\nAs a result, there is no known security impact for these issues in Cortex XSOAR. However, out of an abundance of caution, we removed the impacted Golang code entirely from Cortex XSOAR 5.5.0, Cortex XSOAR 6.0.2, and all later versions of Cortex XSOAR.\n"
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "Cortex XSOAR 5.5.0, Cortex XSOAR 6.0.2, and all later versions of Cortex XSOAR do not include the impacted Golang code."
+		}
+	],
+	"severity": "NONE",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": false,
+	"AV": "PHYSICAL",
+	"AC": "HIGH",
+	"PR": "HIGH",
+	"UI": "REQUIRED",
+	"C": "NONE",
+	"I": "NONE",
+	"A": "NONE",
+	"product": [
+		"Cortex XSOAR"
+	],
+	"version": [
+		"Cortex XSOAR 6.0",
+		"Cortex XSOAR 5.5"
+	],
+	"affected": [
+		"< 6.0.2",
+		""
+	],
+	"affected_list": [
+		"Cortex XSOAR 6.0"
+	],
+	"fixed": [
+		">= 6.0.2",
+		"5.5.*"
+	],
+	"date": "2021-01-13T17:00:00.000Z",
+	"updated": "2021-01-13T17:00:00.000Z"
+}

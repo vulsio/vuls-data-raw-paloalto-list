@@ -1,0 +1,67 @@
+{
+	"id": "PAN-SA-2024-0010",
+	"title": "Expedition: Multiple Vulnerabilities in Expedition Lead to Exposure of Firewall Credentials",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "Multiple vulnerabilities in Palo Alto Networks Expedition allow an attacker to read Expedition database contents and arbitrary files, as well as write arbitrary files to temporary storage locations on the Expedition system. Combined, these include information such as usernames, cleartext passwords, device configurations, and device API keys of PAN-OS firewalls.\n\nThese issues do not affect the firewalls, Panorama, Prisma Access, or Cloud NGFW."
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "The fixes for all listed issues are available in Expedition 1.2.96, and all later Expedition versions.\n\nThe cleartext file affected by CVE-2024-9466 will be removed automatically during the upgrade.\n\nAll Expedition usernames, passwords, and API keys should be rotated after upgrading to the fixed version of Expedition.\n\nAll firewall usernames, passwords, and API keys processed by Expedition should be rotated after updating."
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "Ensure networks access to Expedition is restricted to authorized users, hosts, or networks.\n\nIf Expedition is not in active use, ensure that Expedition software is shut down.\n\nFor CVE-2024-9465, you can check for an indicator of compromise with the following command on an Expedition system (replace \"root\" with your username if you are using a different username):\n\n    mysql -uroot -p -D pandb -e \"SELECT * FROM cronjobs;\"\n\nIf you see any records returned, this indicates a potential compromise. Please note that if no records are returned, the system may still be compromised. This is only intended to indicate a potential compromise, rather than confirm a system has not been compromised.\n\nThere are no practical indicators of compromise for the remainder of the CVEs in this advisory."
+		}
+	],
+	"severity": "CRITICAL",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": true,
+	"AV": "NETWORK",
+	"AC": "LOW",
+	"PR": "NONE",
+	"UI": "NONE",
+	"C": "product:HIGH subsequent:HIGH",
+	"I": "product:HIGH subsequent:NONE",
+	"A": "product:HIGH subsequent:NONE",
+	"product": [
+		"Expedition",
+		"Cloud NGFW",
+		"Panorama",
+		"PAN-OS",
+		"Prisma Access"
+	],
+	"version": [
+		"Expedition 1",
+		"Cloud NGFW",
+		"Panorama",
+		"PAN-OS",
+		"Prisma Access"
+	],
+	"affected": [
+		"< 1.2.96",
+		"None",
+		"None",
+		"None",
+		"None"
+	],
+	"affected_list": [
+		"Expedition"
+	],
+	"fixed": [
+		">= 1.2.96",
+		"All",
+		"All",
+		"All",
+		"All"
+	],
+	"date": "2024-10-09T16:00:00.000Z",
+	"updated": "2024-11-14T21:30:00.000Z"
+}

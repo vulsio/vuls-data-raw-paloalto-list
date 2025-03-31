@@ -1,0 +1,50 @@
+{
+	"id": "PAN-SA-2019-0004",
+	"title": "Cross-Site Scripting in Expedition Migration Tool",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "Three cross-site scripting (XSS) vulnerabilities exist in the Palo Alto Networks Migration Tool (“Expedition”). (Ref # MT-926/ CVE-2019-1569; MT-927/ CVE-2019-1570; MT-928, MT-929/ CVE-2019-1571)\nCVE-2019-1569: Successful exploitation of this issue may allow an authenticated attacker to inject arbitrary JavaScript or HTML in the User Mapping settings.\n\nCVE-2019-1570: Successful exploitation of this issue may allow an authenticated attacker to inject arbitrary JavaScript or HTML in the LDAP server settings.\n\nCVE-2019-1571: Successful exploitation of this issue may allow an authenticated attacker to inject arbitrary JavaScript or HTML in the RADIUS server settings.\n\nThis issue affects Expedition 1.1.8 and earlier.\n\nNote that this issue only impacts the Palo Alto Networks Migration Tool (“Expedition”), a tool available from the Palo Alto Networks Live site.  This issue does not affect PAN-OS or any other supported product or service.  For more information on Expedition, see: https://live.paloaltonetworks.com/t5/Expedition-Migration-Tool/ct-p/migration_tool.  "
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "Expedition 1.1.9 and later"
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "N/A"
+		}
+	],
+	"severity": "MEDIUM",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"AV": "NETWORK",
+	"AC": "LOW",
+	"PR": "HIGH",
+	"UI": "REQUIRED",
+	"C": "LOW",
+	"I": "LOW",
+	"A": "NONE",
+	"product": [
+		"Expedition"
+	],
+	"version": [
+		"Expedition 1.1"
+	],
+	"affected": [
+		"<= 1.1.8"
+	],
+	"affected_list": [
+		"Expedition 1.1"
+	],
+	"fixed": [
+		">= 1.1.9"
+	],
+	"date": "2019-03-12T17:00:00.000Z",
+	"updated": "2019-03-12T17:00:00.000Z"
+}

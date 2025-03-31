@@ -1,0 +1,51 @@
+{
+	"id": "PAN-SA-2014-0006",
+	"title": "Privilege escalation in GlobalProtect App for Mac OS X",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "A path injection vulnerability affecting the GlobalProtect App for Mac OS X 2.1.0 and earlier could allow a local attacker to gain elevated privileges on a targeted system.\nSuccessful exploitation of this vulnerability results in a lower privileged user obtaining elevated privileges. A local attacker could exploit this vulnerability to execute arbitrary code in the security context of the local system.\nThis issue affects GlobalProtect app version 2.1.0 and earlier for Mac OS X."
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "GlobalProtect 2.1.1 for Mac OS X addresses the issue described in this advisory."
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "N/A"
+		}
+	],
+	"severity": "HIGH",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"AV": "LOCAL",
+	"AC": "LOW",
+	"PR": "LOW",
+	"UI": "REQUIRED",
+	"C": "HIGH",
+	"I": "HIGH",
+	"A": "HIGH",
+	"product": [
+		"GlobalProtect App"
+	],
+	"version": [
+		"GlobalProtect App 2.1"
+	],
+	"affected": [
+		"<= 2.1.0 on Mac OS X"
+	],
+	"affected_list": [
+		"GlobalProtect App 2.1.0",
+		"GlobalProtect App 2.1"
+	],
+	"fixed": [
+		">= 2.1.1 on Mac OS X"
+	],
+	"date": "2014-12-10T08:00:00.000Z",
+	"updated": "2014-12-10T08:00:00.000Z"
+}

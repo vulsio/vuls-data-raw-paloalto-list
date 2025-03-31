@@ -1,0 +1,51 @@
+{
+	"id": "PAN-SA-2024-0006",
+	"title": "Informational Bulletin: Expedition Installation Script Resets Root Password",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "A hardcoded password in the Palo Alto Networks Expedition VM installation script may allow remote attackers to elevate their privileges to root access on Expedition VMs that are running Expedition, if not changed as per the installation instructions.\n\nThe updated version of the script no longer resets the password, eliminating the need to manually change the password after installation.\n\nAdditional information can be found in the Expedition installation guide and hardening guide, which recommend both changing the root password and using key-based SSH authentication: https://live.paloaltonetworks.com/t5/expedition-articles/expedition-documentation/ta-p/215619"
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "The password is no longer reset in the Expedition initSetup_v2.0 script with a commit date 20240605, and all later Expedition VM script versions. The commit date of the initSetup_v2 script (https://conversionupdates.paloaltonetworks.com/expedition1_Installer_latest.tgz) can be found at the top of the script as a comment.\n\nIf you installed Expedition before June 5, 2024 and did not change the root password after the installation concluded, you should verify the root password is what you expect."
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "This issue requires the remote attacker to know the password of the root account used in the Expedition VM. You can mitigate this issue by changing the default password of the Expedition VM to a password with industry standard complexity."
+		}
+	],
+	"severity": "NONE",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": false,
+	"AV": "PHYSICAL",
+	"AC": "HIGH",
+	"PR": "HIGH",
+	"UI": "ACTIVE",
+	"C": "product:NONE subsequent:NONE",
+	"I": "product:NONE subsequent:NONE",
+	"A": "product:NONE subsequent:NONE",
+	"product": [
+		"Expedition"
+	],
+	"version": [
+		"Expedition initSetup_v2.0"
+	],
+	"affected": [
+		"< commit date 20240605"
+	],
+	"affected_list": [
+		"Expedition initSetup_v2.0"
+	],
+	"fixed": [
+		">= commit date 20240605"
+	],
+	"date": "2024-07-10T16:00:00.000Z",
+	"updated": "2024-07-10T16:00:00.000Z"
+}

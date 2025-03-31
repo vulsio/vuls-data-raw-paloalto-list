@@ -1,0 +1,50 @@
+{
+	"id": "PAN-SA-2020-0011",
+	"title": "Informational: Impact of OpenSSL vulnerability CVE-2020-1971",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "Palo Alto Networks Product Security Assurance team has evaluated the vulnerability CVE-2020-1971 that affects the OpenSSL library.\n\nThe vulnerability does not have a security impact on PAN-OS, GlobalProtect App, or Cortex XSOAR. The scenarios required for successful exploitation do not exist on these products.\n"
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "No product updates are required for these issues."
+		}
+	],
+	"severity": "NONE",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": false,
+	"AV": "PHYSICAL",
+	"AC": "HIGH",
+	"PR": "HIGH",
+	"UI": "ACTIVE",
+	"C": "product:NONE subsequent:NONE",
+	"I": "product:NONE subsequent:NONE",
+	"A": "product:NONE subsequent:NONE",
+	"product": [
+		"PAN-OS",
+		"Cortex XSOAR",
+		"GlobalProtect App"
+	],
+	"version": [
+		"PAN-OS ",
+		"GlobalProtect App ",
+		"Cortex XSOAR "
+	],
+	"affected": [
+		"",
+		"",
+		""
+	],
+	"fixed": [
+		"All",
+		"All",
+		"All"
+	],
+	"date": "2020-12-09T17:00:00.000Z",
+	"updated": "2020-12-09T17:00:00.000Z"
+}

@@ -1,0 +1,69 @@
+{
+	"id": "PAN-SA-2024-0005",
+	"title": "Informational Bulletin: Proof of Concept (PoC) Bypasses Protection Modules in Cortex XDR Agent",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "The Palo Alto Networks Product Security Assurance team is aware of research presented by SafeBreach entitled \"The Dark Side of EDR\", describing a specifically crafted proof of concept (PoC) that bypasses Cortex XDR agent endpoint protection modules. Practical attack scenarios require administrative privileges to perform this bypass.\n\nThe technique presented is detected and blocked in agents with CU-1320 and later content updates. This issue does not represent a product vulnerability risk to customers using Cortex XDR agent. This issue is not applicable to Mac OS and Linux platforms."
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "Cortex XDR agent content update CU-1320 detects and prevents this technique.\n\nNo updates are planned for Cortex XDR agent 5.0 as it does not have the relevant Behavioral Threat Protection module required to detect this technique."
+		}
+	],
+	"severity": "NONE",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": false,
+	"AV": "PHYSICAL",
+	"AC": "HIGH",
+	"PR": "HIGH",
+	"UI": "ACTIVE",
+	"C": "product:NONE subsequent:NONE",
+	"I": "product:NONE subsequent:NONE",
+	"A": "product:NONE subsequent:NONE",
+	"product": [
+		"Cortex XDR Agent"
+	],
+	"version": [
+		"Cortex XDR Agent 8.4",
+		"Cortex XDR Agent 8.3",
+		"Cortex XDR Agent 8.2",
+		"Cortex XDR Agent 8.1",
+		"Cortex XDR Agent 8.0",
+		"Cortex XDR Agent 7.9",
+		"Cortex XDR Agent 5.0"
+	],
+	"affected": [
+		"< Agents with content update earlier than CU-1320 on Windows",
+		"< Agents with content update earlier than CU-1320 on Windows",
+		"< Agents with content update earlier than CU-1320 on Windows",
+		"< Agents with content update earlier than CU-1320 on Windows",
+		"< Agents with content update earlier than CU-1320 on Windows",
+		"< Agents with content update earlier than CU-1320 on Windows",
+		"All agents on Windows"
+	],
+	"affected_list": [
+		"Cortex XDR Agent 8.4",
+		"Cortex XDR Agent 8.3",
+		"Cortex XDR Agent 8.2",
+		"Cortex XDR Agent 8.1",
+		"Cortex XDR Agent 8.0",
+		"Cortex XDR Agent 7.9",
+		"Cortex XDR Agent 5.0"
+	],
+	"fixed": [
+		">= Agents with CU-1320 or a later content update on Windows",
+		">= Agents with CU-1320 or a later content update on Windows",
+		">= Agents with CU-1320 or a later content update on Windows",
+		">= Agents with CU-1320 or a later content update on Windows",
+		">= Agents with CU-1320 or a later content update on Windows",
+		">= Agents with CU-1320 or a later content update on Windows",
+		""
+	],
+	"date": "2024-04-24T18:50:00.000Z",
+	"updated": "2024-04-24T18:50:00.000Z"
+}

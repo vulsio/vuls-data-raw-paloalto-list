@@ -1,0 +1,76 @@
+{
+	"id": "PAN-SA-2023-0004",
+	"title": "Informational Bulletin: Impact of TunnelCrack Vulnerabilities (CVE-2023-36671, CVE-2023-36672, CVE-2023-35838, and CVE-2023-36673)",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "The Palo Alto Networks Product Security Assurance team is aware of the research publication that details a combination of attacks named \"TunnelCrack\". These are also referred to as LocalNet and ServerIP attacks as detailed below.\n\nThese attacks leak VPN client traffic outside of the protected VPN tunnel when clients connect to untrusted networks, such as rogue Wi-Fi access points.\n\nA LocalNet attack allows an attacker to take advantage of local network access features in multiple vendor VPN clients to access unencrypted traffic.\n\nA ServerIP attack allows an attacker to intercept traffic sent to a spoofed VPN gateway via DNS spoofing attacks.\n\nHowever, these attacks do not enable the attacker to decrypt HTTPS or other encrypted traffic.\n\nGlobalProtect agent deployments on Android and ChromeOS are not vulnerable to LocalNet attacks. On iOS, third-party apps with the \"Local Network\" permission disabled are not vulnerable to LocalNet attacks.\n\nGlobalProtect agent deployments on all platforms configured with \"No direct access to local network\" are not vulnerable to LocalNet attacks.\n\nAdditionally, Prisma Access customers are not impacted by ServerIP attacks. PAN-OS with GlobalProtect Gateways configured with the address set as an IP are not impacted by ServerIP attacks.\n\nPlease refer to the Required Configuration for Exposure section for the exact configurations that make the deployments susceptible to these attacks."
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "No software updates are required at this time.\n\nPlease see the following KB article, which describes how to mitigate both LocalNet and ServerIP attacks: https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA14u000000XgAlCAK\n\nLocalNet attacks on Windows, macOS, and Linux are completely mitigated by enabling the \"No direct access to local network\" feature in the Split Tunnel tab on the firewall. Detailed information can be found at:\n* https://docs.paloaltonetworks.com/pan-os/11-0/pan-os-web-interface-help/globalprotect/network-globalprotect-gateways/globalprotect-gateways-agent-tab/client-settings-tab\n* https://docs.paloaltonetworks.com/prisma/prisma-access/3-0/prisma-access-panorama-admin/prisma-access-advanced-deployments/mobile-user-globalprotect-advanced-deployments/sinkhole-ipv6-traffic-from-mobile-users/configure-globalprotect-to-disable-direct-access-to-the-local-network\n\nNote that enabling \"No direct access to local network\" prevents end users from connecting to local LAN devices such as home printers, network storage, or streaming devices. You can configure exceptions for specific users, operating systems, source addresses, destination domains, and applications by following the instructions at:\n* https://docs.paloaltonetworks.com/globalprotect/10-1/globalprotect-admin/globalprotect-gateways/split-tunnel-traffic-on-globalprotect-gateways/configure-a-split-tunnel-based-on-the-access-route\n* https://docs.paloaltonetworks.com/globalprotect/10-1/globalprotect-admin/globalprotect-gateways/split-tunnel-traffic-on-globalprotect-gateways/configure-a-split-tunnel-based-on-the-domain-and-application\n\nLocalNet attacks against third party apps on iOS are completely mitigated by disabling access to the local Local Network on a per-app basis. LocalNet attacks against Apple apps, such as Safari, can be mitigated by disabling the apps. Detailed information can be found at:\n* https://support.apple.com/en-us/HT211870\n* https://support.apple.com/en-us/HT201304\n\nServerIP attacks are completely mitigated by navigating to Network > GlobalProtect > Portal > Agent > External Gateway and setting an IP address instead of an FQDN for the gateway configuration. Gateway certificates will need to be updated to include the IP address as a SAN or as a common name. Detailed information can be found at: https://docs.paloaltonetworks.com/pan-os/11-0/pan-os-web-interface-help/globalprotect/network-globalprotect-portals/globalprotect-portals-agent-configuration-tab/globalprotect-portals-agent-external-tab"
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "Please refer to the recommended configurations in the Solution section that completely mitigate these attacks.\n\nEndpoints configured to use only an authenticated DNS mechanism such as DNS over TLS, DNS over HTTPS, or DNSSEC are also protected from the ServerIP attacks."
+		}
+	],
+	"severity": "NONE",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": false,
+	"AV": "PHYSICAL",
+	"AC": "HIGH",
+	"PR": "HIGH",
+	"UI": "REQUIRED",
+	"C": "NONE",
+	"I": "NONE",
+	"A": "NONE",
+	"product": [
+		"Prisma Access",
+		"PAN-OS"
+	],
+	"version": [
+		"Prisma Access with GlobalProtect app on Windows, macOS, and Linux",
+		"Prisma Access with GlobalProtect app on iOS",
+		"Prisma Access with GlobalProtect app on Android and ChromeOS",
+		"PAN-OS with GlobalProtect app on Windows, macOS, and Linux",
+		"PAN-OS with GlobalProtect app on iOS",
+		"PAN-OS with GlobalProtect app on Android and ChromeOS"
+	],
+	"affected": [
+		"LocalNet: Configurations allowing local network access, ServerIP: None",
+		"LocalNet: Third-party apps with the \"Local Network\" permission enabled and Apple apps, ServerIP: None",
+		"None",
+		"LocalNet: Configurations allowing local network access, ServerIP: Gateways with address set as an FQDN",
+		"LocalNet: Third-party apps with the \"Local Network\" permission enabled and Apple apps, ServerIP: Gateways with address set as an FQDN",
+		"LocalNet: None, ServerIP: Gateways with address set as an FQDN"
+	],
+	"affected_list": [
+		"Prisma Access with GlobalProtect app on Windows, macOS, and Linux OS",
+		"Prisma Access with GlobalProtect app on Windows, macOS, and Linux",
+		"Prisma Access with GlobalProtect app on iOS, Android, and ChromeOS",
+		"Prisma Access with GlobalProtect app on iOS",
+		"Prisma Access with GlobalProtect app on Android and ChromeOS",
+		"PAN-OS with GlobalProtect app on Windows, macOS, and Linux OS",
+		"PAN-OS with GlobalProtect app on Windows, macOS, and Linux",
+		"PAN-OS with GlobalProtect app on iOS, Android, and ChromeOS",
+		"PAN-OS with GlobalProtect app on iOS",
+		"PAN-OS with GlobalProtect app on Android and ChromeOS"
+	],
+	"fixed": [
+		"LocalNet: \"No direct access to local network\" enabled, ServerIP: All",
+		"LocalNet: Third-party apps with the \"Local Network\" permission disabled, ServerIP: All",
+		"All",
+		"LocalNet: \"No direct access to local network\" enabled, ServerIP: Gateways with address set as an IP",
+		"LocalNet: Third-party apps with the \"Local Network\" permission disabled, ServerIP: Gateways with address set as an IP",
+		"LocalNet: All, ServerIP: Gateways with address set as an IP"
+	],
+	"date": "2023-08-17T01:00:00.000Z",
+	"updated": "2023-09-26T19:00:00.000Z"
+}

@@ -1,0 +1,103 @@
+{
+	"id": "PAN-SA-2016-0006",
+	"title": "HTTP Header Evasion",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "An evasion was identified whereby a user could specially craft an HTTP header to evade URL filtering on Palo Alto Networks firewalls. (Ref #93838)\nThe HTTP header evasion technique can be used by a malicious insider to bypass URL filtering policy.  It is not a product vulnerability that affects the security or integrity of the firewall itself. Most legitimate web servers will not accept such incoming packets. The evasion is only possible if the destination web server does not perform basic checks on the request. Note that this evasion cannot be used to attack and penetrate a network from the outside. It can only be used by a malicious insider to evade URL filtering from the inside of the protected network.\nThis issue affects PAN-OS releases 5.0.X; 6.0.X; 6.1.X; 7.0.X and 7.1.0"
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "PAN-OS releases 7.1.1 and newer. Customers concerned with this evasion technique are advised to upgrade to PAN-OS 7.1.1 and to enable threat signatures #14984 and #14978.  The use of the DNS proxy feature is also recommended for improved accuracy.  More details can be found at https://live.paloaltonetworks.com/t5/Notices-and-Service/Information-regarding-TLS-HTTP-header-evasion/ta-p/76562"
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "Customers concerned with this evasion that do not deploy the solution available in PAN-OS 7.1.1 are advised to take the following actions to help mitigate the potential impact of malicious insiders or compromised hosts that may choose to use this evasion technique: (1) Enable SSL certificate checking even for non-decrypted traffic and enforce certificates issued by trusted CAs only. (2) Make sure antivirus, vulnerability, and anti-spyware profiles are applied to all allowed web traffic. (3) Ensure that content packages containing antivirus, vulnerability and anti-spyware protections are up-to-date and configured to update frequently."
+		}
+	],
+	"severity": "MEDIUM",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"AV": "NETWORK",
+	"AC": "LOW",
+	"PR": "LOW",
+	"UI": "REQUIRED",
+	"C": "LOW",
+	"I": "LOW",
+	"A": "NONE",
+	"product": [
+		"PAN-OS"
+	],
+	"version": [
+		"PAN-OS 7.1",
+		"PAN-OS 7.0",
+		"PAN-OS 6.0",
+		"PAN-OS 5.0"
+	],
+	"affected": [
+		"7.1.0",
+		"7.0.*",
+		"6.0.*",
+		"5.0.*"
+	],
+	"affected_list": [
+		"PAN-OS 7.1.0",
+		"PAN-OS 7.1",
+		"PAN-OS 7.0.19",
+		"PAN-OS 7.0.18",
+		"PAN-OS 7.0.17",
+		"PAN-OS 7.0.16",
+		"PAN-OS 7.0.15",
+		"PAN-OS 7.0.14",
+		"PAN-OS 7.0.13",
+		"PAN-OS 7.0.12",
+		"PAN-OS 7.0.11",
+		"PAN-OS 7.0.10",
+		"PAN-OS 7.0.9",
+		"PAN-OS 7.0.8",
+		"PAN-OS 7.0.7",
+		"PAN-OS 7.0.6",
+		"PAN-OS 7.0.5-h2",
+		"PAN-OS 7.0.5-h1",
+		"PAN-OS 7.0.5",
+		"PAN-OS 7.0.4",
+		"PAN-OS 7.0.3",
+		"PAN-OS 7.0.2",
+		"PAN-OS 7.0.1",
+		"PAN-OS 7.0",
+		"PAN-OS 6.0.15",
+		"PAN-OS 6.0.14",
+		"PAN-OS 6.0.13",
+		"PAN-OS 6.0.12",
+		"PAN-OS 6.0.11",
+		"PAN-OS 6.0.10",
+		"PAN-OS 6.0.9",
+		"PAN-OS 6.0.8",
+		"PAN-OS 6.0.7",
+		"PAN-OS 6.0.6",
+		"PAN-OS 6.0.5-h3",
+		"PAN-OS 6.0.5-h2",
+		"PAN-OS 6.0.5-h1",
+		"PAN-OS 6.0.5",
+		"PAN-OS 6.0.4",
+		"PAN-OS 6.0.3",
+		"PAN-OS 6.0.2",
+		"PAN-OS 6.0.1",
+		"PAN-OS 6.0.0",
+		"PAN-OS 6.0",
+		"PAN-OS 5.0"
+	],
+	"fixed": [
+		">= 7.1.1",
+		"",
+		"",
+		""
+	],
+	"date": "2016-04-18T16:00:00.000Z",
+	"updated": "2016-04-18T16:00:00.000Z"
+}

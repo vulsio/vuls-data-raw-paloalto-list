@@ -1,0 +1,50 @@
+{
+	"id": "PAN-SA-2016-0022",
+	"title": "Remote Text File Access on Traps Endpoint Server Management",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "The Traps ESM Server license mechanism allows for remote license validation. The unintended ability to download text files using this subsystem was recently identified. (Ref # CYV-8717).\nThis vulnerability can be used to remotely retrieve text files stored on the Traps ESM.\nThis issue affects Traps ESM Core version 3.3.3 and earlier"
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "Traps ESM Core version 3.3.4 and later"
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "N/A"
+		}
+	],
+	"severity": "HIGH",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"AV": "NETWORK",
+	"AC": "LOW",
+	"PR": "NONE",
+	"UI": "NONE",
+	"C": "HIGH",
+	"I": "NONE",
+	"A": "NONE",
+	"product": [
+		"Traps ESM Core"
+	],
+	"version": [
+		"Traps ESM Core 3.3"
+	],
+	"affected": [
+		"<= 3.3.3"
+	],
+	"affected_list": [
+		"Traps ESM Core 3.3"
+	],
+	"fixed": [
+		">= 3.3.4"
+	],
+	"date": "2016-08-25T19:00:00.000Z",
+	"updated": "2016-08-25T19:00:00.000Z"
+}

@@ -1,0 +1,88 @@
+{
+	"id": "PAN-SA-2019-0011",
+	"title": "Informational: PAN-OS unexpected open ports",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "An issue was resolved in PAN-OS that resulted in a configured Layer 3 interface erroneously opening ports 28869/tcp and 28870/tcp on the IP address assigned to the Layer 3 interface. These ports bind to an internal service that performs an HTTP 301 redirect to the HTTPS port (443/tcp) on the same interface IP address. After redirection, a web client will attempt to connect to the original destination IP address on 443/tcp and, if any such service is configured on the interface by the administrator (such as on the GlobalProtect portal or the device management interface), the client will connect successfully. In the absence of a configured service, any connection to 443/tcp will time out as expected. \n\nThis security advisory is rated as “informational” because there are no known vulnerabilities or immediate security risks posed by this issue; however, because unexpected open ports (28869/tcp and 28870/tcp) may appear in routine scans or audits, we advise you to review this issue and determine appropriate next steps for your environment.  (Refer to PAN-94058 and PAN-101704 in the release notes associated with your release: https://docs.paloaltonetworks.com/pan-os.html.)\n\nThis issue affects Firewalls with GlobalProtect enabled and running PAN-OS 8.0.8 to PAN-OS 8.0.11-h1 or PAN-OS 8.1.0 to PAN-OS 8.1.1. \nFirewalls without GlobalProtect enabled and running PAN-OS 8.0.8 to PAN-OS 8.0.13 or PAN-OS 8.1.0 to PAN-OS 8.1.3.\nFirewalls running PAN-OS 7.1 or PAN-OS 9.0 are NOT affected.\n\n"
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "Firewalls with GlobalProtect enabled: PAN-OS 8.0.12, PAN-OS 8.1.2 or a later release. \nFirewalls without GlobalProtect enabled: PAN-OS 8.0.14, 8.1.4 or a later release."
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "Firewall administrators can create an explicit deny policy that blocks ports 28869/tcp and 28870/tcp on the affected L3 interface addresses. For more information on configuration, please refer to https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLxl"
+		}
+	],
+	"severity": "NONE",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": false,
+	"AV": "NETWORK",
+	"AC": "LOW",
+	"PR": "NONE",
+	"UI": "NONE",
+	"C": "NONE",
+	"I": "NONE",
+	"A": "NONE",
+	"product": [
+		"PAN-OS",
+		"PAN-OS",
+		"PAN-OS"
+	],
+	"version": [
+		"PAN-OS 9.0",
+		"PAN-OS 8.1",
+		"PAN-OS 8.0",
+		"PAN-OS 7.1"
+	],
+	"affected": [
+		"",
+		"<= 8.1.1 on with GlobalProtect, <= 8.1.3 on without GlobalProtect",
+		"<= 8.0.1h-h1 on with GlobalProtect, <= 8.0.13 on without GlobalProtect",
+		""
+	],
+	"affected_list": [
+		"PAN-OS 8.1.3",
+		"PAN-OS 8.1.2",
+		"PAN-OS 8.1.1",
+		"PAN-OS 8.1.0",
+		"PAN-OS 8.1",
+		"PAN-OS 8.0.13",
+		"PAN-OS 8.0.12",
+		"PAN-OS 8.0.11-h1",
+		"PAN-OS 8.0.10",
+		"PAN-OS 8.0.9",
+		"PAN-OS 8.0.8",
+		"PAN-OS 8.0.7",
+		"PAN-OS 8.0.6-h3",
+		"PAN-OS 8.0.6-h2",
+		"PAN-OS 8.0.6-h1",
+		"PAN-OS 8.0.6",
+		"PAN-OS 8.0.5",
+		"PAN-OS 8.0.4",
+		"PAN-OS 8.0.3-h4",
+		"PAN-OS 8.0.3-h3",
+		"PAN-OS 8.0.3-h2",
+		"PAN-OS 8.0.3-h1",
+		"PAN-OS 8.0.3",
+		"PAN-OS 8.0.2",
+		"PAN-OS 8.0.1",
+		"PAN-OS 8.0.0",
+		"PAN-OS 8.0"
+	],
+	"fixed": [
+		"9.0.*",
+		">= 8.1.2 on with GlobalProtect, >= 8.1.4 on without GlobalProtect",
+		">= 8.0.12 on with GlobalProtect, >= 8.0.14 on without GlobalProtect",
+		"7.1.*"
+	],
+	"date": "2019-05-15T22:37:00.000Z",
+	"updated": "2019-05-15T22:37:00.000Z"
+}

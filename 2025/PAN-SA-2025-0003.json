@@ -1,0 +1,56 @@
+{
+	"id": "PAN-SA-2025-0003",
+	"title": "Informational: PAN-OS BIOS and Bootloader Security Bulletin",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "Palo Alto Networks is aware of claims of multiple vulnerabilities in hardware device firmware and bootloaders included in our PA-Series (hardware) firewalls.\n\nIt is not possible for malicious actors or PAN-OS administrators to exploit these vulnerabilities under normal conditions on PAN-OS versions with up-to-date, secured management interfaces deployed according to the best practices guidelines (https://docs.paloaltonetworks.com/best-practices/10-1/administrative-access-best-practices/administrative-access-best-practices/deploy-administrative-access-best-practices). Users and administrators do not have access to the BIOS firmware or permissions to modify it. An attacker would need to first compromise the system and then get the root Linux privileges necessary to perform these actions before they could exploit these vulnerabilities. These vulnerabilities themselves do not allow an attacker to compromise the PAN-OS software on the firewall.\n\nNone of the concerns are applicable to PAN-OS CN-Series, PAN-OS VM-Series, Cloud NGFW and Prisma Access."
+		}
+	],
+	"solution": [
+		{
+			"lang": "eng",
+			"value": "While the conditions required to exploit these vulnerabilities are not available to users protected by PAN-OS or administrators of PAN-OS software, we are working with the third-party vendors to develop any firmware updates that may be needed. We will provide further updates and guidance as they become available."
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "These vulnerabilities require an attacker to compromise PAN-OS software before they can successfully exploit it. The risk of exploitation on PAN-OS software is reduced by upgrading your appliances to the latest versions.\n\nAdditionally secure access to the management web interface by restricting access to only trusted internal IP addresses according to our recommended best practice deployment guidelines (https://docs.paloaltonetworks.com/best-practices)."
+		}
+	],
+	"severity": "NONE",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": false,
+	"AV": "NETWORK",
+	"AC": "LOW",
+	"PR": "NONE",
+	"UI": "NONE",
+	"C": "product:NONE subsequent:NONE",
+	"I": "product:NONE subsequent:NONE",
+	"A": "product:NONE subsequent:NONE",
+	"product": [
+		"Cloud NGFW",
+		"PAN-OS",
+		"Prisma Access"
+	],
+	"version": [
+		"Cloud NGFW",
+		"PAN-OS",
+		"Prisma Access"
+	],
+	"affected": [
+		"None",
+		" All on PA-3200, PA-5200, PA-7000",
+		"None"
+	],
+	"fixed": [
+		"All",
+		" None on PA-3200, PA-5200, PA-7000. No other platforms are affected",
+		"All"
+	],
+	"date": "2025-01-23T23:20:00.000Z",
+	"updated": "2025-03-26T22:30:00.000Z"
+}

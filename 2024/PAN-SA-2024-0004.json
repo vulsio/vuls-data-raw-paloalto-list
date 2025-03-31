@@ -1,0 +1,36 @@
+{
+	"id": "PAN-SA-2024-0004",
+	"title": "Informational Bulletin: OSS CVEs fixed in PAN-OS",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "The Palo Alto Networks Product Security Assurance team has evaluated the following open source software (OSS) CVEs as they relate to PAN-OS. While it was not determined that these CVEs have any significant impact on PAN-OS, they have been fixed out of an abundance of caution."
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "No software updates are required at this time."
+		}
+	],
+	"severity": "NONE",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": false,
+	"AV": "PHYSICAL",
+	"AC": "HIGH",
+	"PR": "HIGH",
+	"UI": "ACTIVE",
+	"C": "product:NONE subsequent:NONE",
+	"I": "product:NONE subsequent:NONE",
+	"A": "product:NONE subsequent:NONE",
+	"product": [
+		"PAN-OS"
+	],
+	"affected_list": [
+		"PAN-OS"
+	],
+	"date": "2024-04-10T16:00:00.000Z",
+	"updated": "2024-04-10T16:00:00.000Z"
+}

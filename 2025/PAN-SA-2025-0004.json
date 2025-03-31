@@ -1,0 +1,48 @@
+{
+	"id": "PAN-SA-2025-0004",
+	"title": "Chromium: Monthly Vulnerability Update (February 2025)",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "Palo Alto Networks incorporated the following Chromium security fixes into our products:\n\n * https://chromereleases.googleblog.com/2025/02/stable-channel-update-for-desktop.html\n * https://chromereleases.googleblog.com/2025/01/stable-channel-update-for-desktop_28.html\n * https://chromereleases.googleblog.com/2025/01/stable-channel-update-for-desktop_22.html\n * https://chromereleases.googleblog.com/2025/01/stable-channel-update-for-desktop_14.html\n * https://chromereleases.googleblog.com/2025/01/stable-channel-update-for-desktop.html"
+		}
+	],
+	"solution": [
+		{
+			"lang": "eng",
+			"value": "CVE             PRISMA ACCESS BROWSER\nCVE-2025-0291   132.111.3017.2\nCVE-2025-0434   132.111.3017.2\nCVE-2025-0435   132.111.3017.2\nCVE-2025-0436   132.111.3017.2\nCVE-2025-0437   132.111.3017.2\nCVE-2025-0438   132.111.3017.2\nCVE-2025-0439   132.111.3017.2\nCVE-2025-0440   132.111.3017.2\nCVE-2025-0441   132.111.3017.2\nCVE-2025-0442   132.111.3017.2\nCVE-2025-0443   132.111.3017.2\nCVE-2025-0446   132.111.3017.2\nCVE-2025-0447   132.111.3017.2\nCVE-2025-0448   132.111.3017.2\nCVE-2025-0444   133.8.10.54\nCVE-2025-0445   133.8.10.54\nCVE-2025-0451   133.8.10.54\nCVE-2025-0611   133.8.10.54\nCVE-2025-0612   133.8.10.54\nCVE-2025-0762   133.8.10.54"
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "No workaround or mitigation is available."
+		}
+	],
+	"severity": "MEDIUM",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": true,
+	"AV": "NETWORK",
+	"AC": "LOW",
+	"PR": "NONE",
+	"UI": "ACTIVE",
+	"C": "product:HIGH subsequent:NONE",
+	"I": "product:HIGH subsequent:NONE",
+	"A": "product:HIGH subsequent:NONE",
+	"product": [
+		"Prisma Access Browser"
+	],
+	"version": [
+		"Prisma Access Browser"
+	],
+	"affected": [
+		"< 132.111.3017.2"
+	],
+	"fixed": [
+		">= 133.8.10.54"
+	],
+	"date": "2025-02-12T17:00:00.000Z",
+	"updated": "2025-02-12T17:00:00.000Z"
+}

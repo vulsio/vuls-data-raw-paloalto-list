@@ -1,0 +1,54 @@
+{
+	"id": "PAN-SA-2019-0012",
+	"title": "Information about Recent Intel Side Channel Vulnerabilities",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "Palo Alto Networks has determined that WildFire Appliance (WF-500) and WildFire Cloud are affected by the recent vulnerability disclosures, known as Fallout, RIDL, and Zombieload. We are working to validate and implement software updates to address these issues. We will provide updates as they become available. (PAN-117746/CVE-2018-12126, CVE-2018-12127, CVE-2018-12130 and CVE-2019-11091)\n\nSuccessful exploitation of this issue may allow reads from a compromised sandbox VM (guest OS) to retrieve data from other VMs (another guest OS) or the PAN-OS operating system (host OS) as a result of breaching the separation between kernel and user address space. The analysis method utilized by the WildFire Appliance (WF-500) and WildFire Cloud helps to mitigate the impact of this issue. Each virtualized file analysis session is unique and each session is terminated and destroyed after analysis is complete. The uniqueness of each file analysis session coupled with the limited amount of time allowed to execute an attack within the environment limits the scope of impact that the attacker can have on the sandbox VM (guest OS) and the PAN-OS operating system (host OS).\n\nPAN-OS and Panorama platforms are not directly impacted by these vulnerabilities because successful exploitation on PAN-OS devices requires an attacker to have already compromised the PAN-OS operating system. We will continue to monitor the situation and evaluate the patching options supplied by our partner vendors as they become available.\n\nWe will continue to provide updates regarding software patches and/or other mitigations as they become available. For more background, please see the following https://researchcenter.paloaltonetworks.com/2018/01/understanding-affected-not-vulnerable/\n\nThis issue affects WF-500 (WildFire Appliance) running any version of appliance software: PAN-OS 9.0, PAN-OS 8.1, PAN-OS 8.0 and PAN-OS 7.1.\n\nWildFire Cloud is affected by this issue.\n\nThe Traps agent does not detect/prevent this specific type of CPU-level side-channel attack."
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "We will provide updates as more information becomes available. The security and stability of our products remain a top priority and we will continue to monitor this situation."
+		}
+	],
+	"severity": "MEDIUM",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": true,
+	"AV": "LOCAL",
+	"AC": "HIGH",
+	"PR": "LOW",
+	"UI": "NONE",
+	"C": "HIGH",
+	"I": "NONE",
+	"A": "NONE",
+	"product": [
+		"PAN-OS",
+		"WildFire Appliance (WF-500)",
+		"WildFire Cloud"
+	],
+	"version": [
+		"PAN-OS",
+		"WildFire Appliance (WF-500)",
+		"WildFire Cloud"
+	],
+	"affected": [
+		"None",
+		"All",
+		"All"
+	],
+	"affected_list": [
+		"WildFire Cloud",
+		"WildFire Appliance"
+	],
+	"fixed": [
+		"All",
+		"None",
+		"None"
+	],
+	"date": "2019-05-29T23:30:00.000Z",
+	"updated": "2019-05-29T23:30:00.000Z"
+}

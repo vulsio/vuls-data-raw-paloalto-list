@@ -1,0 +1,61 @@
+{
+	"id": "PAN-SA-2016-0023",
+	"title": "OpenSSL Vulnerabilities",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "The OpenSSL library embedded in the GlobalProtect™ agent, TerminalServer™ agent and UserID™ agent is affected by the following public vulnerabilities: CVE-2016-2105, CVE-2016-2106, CVE-2016-2107, CVE-2016-2109, and CVE-2016-2176 (Ref # 100669, 100133, PAN-60833).\nAt the time of this advisory and in the context of GlobalProtect, TerminalServer and UserID, no public exploitation of these vulnerabilities are known.\nThis issue affects GlobalProtect agent 3.1.0 and earlier; TerminalServer agent 7.0.5 and earlier; UserID agent 7.0.5 and earlier"
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "GlobalProtect App 3.1.1 and later; Terminal Server Agent 7.0.6 and later; User-ID Agent 7.0.6 and later"
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "N/A"
+		}
+	],
+	"severity": "HIGH",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"AV": "NETWORK",
+	"AC": "LOW",
+	"PR": "NONE",
+	"UI": "NONE",
+	"C": "LOW",
+	"I": "NONE",
+	"A": "HIGH",
+	"product": [
+		"GlobalProtect App",
+		"Terminal Server Agent",
+		"User-ID Agent"
+	],
+	"version": [
+		"User-ID Agent 7.0",
+		"Terminal Server Agent 7.0",
+		"GlobalProtect App 3.1"
+	],
+	"affected": [
+		"<= 7.0.5",
+		"<= 7.0.5",
+		"<= 3.1.0"
+	],
+	"affected_list": [
+		"User-ID Agent 7.0",
+		"Terminal Server Agent 7.0",
+		"GlobalProtect App 3.1.0",
+		"GlobalProtect App 3.1"
+	],
+	"fixed": [
+		">= 7.0.6",
+		">= 7.0.6",
+		">= 3.1.1"
+	],
+	"date": "2016-09-02T21:00:00.000Z",
+	"updated": "2016-09-02T21:00:00.000Z"
+}

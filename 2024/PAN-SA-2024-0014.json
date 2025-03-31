@@ -1,0 +1,52 @@
+{
+	"id": "PAN-SA-2024-0014",
+	"title": "Informational Bulletin: Impact of OSS CVEs in Cortex XDR Agent",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "The Palo Alto Networks Product Security Assurance team has evaluated the following open source software (OSS) CVEs as they relate to Cortex XDR Agent. While Cortex XDR Agent may include the affected OSS package, Cortex XDR Agent does not offer any scenarios required for an attacker to successfully exploit these vulnerabilities and is not impacted.\n\nIn addition, as part of our Secure Software Development Lifecycle, we regularly update the versions of open source software in the Cortex XDR agent. Version information regarding this open source software can be found here: https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-OSS-Listings"
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "No software updates are required at this time."
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "TBD"
+		}
+	],
+	"severity": "NONE",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": false,
+	"AV": "PHYSICAL",
+	"AC": "HIGH",
+	"PR": "HIGH",
+	"UI": "ACTIVE",
+	"C": "product:NONE subsequent:NONE",
+	"I": "product:NONE subsequent:NONE",
+	"A": "product:NONE subsequent:NONE",
+	"product": [
+		"Cortex XDR Agent"
+	],
+	"version": [
+		"Cortex XDR Agent"
+	],
+	"affected": [
+		"None"
+	],
+	"affected_list": [
+		"PAN-OS",
+		"Cortex XDR Agent"
+	],
+	"fixed": [
+		"All"
+	],
+	"date": "2024-11-07T00:00:00.000Z",
+	"updated": "2024-11-07T00:00:00.000Z"
+}

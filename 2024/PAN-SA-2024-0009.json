@@ -1,0 +1,45 @@
+{
+	"id": "PAN-SA-2024-0009",
+	"title": "Prisma Access Browser: Monthly Vulnerability Updates",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "Prisma Access Browser has incorporated the latest upstream Chromium security fixes listed here:\n- https://chromereleases.googleblog.com/2024/08/stable-channel-update-for-desktop_21.html\n- https://chromereleases.googleblog.com/2024/08/stable-channel-update-for-desktop_28.html\n- https://chromereleases.googleblog.com/2024/09/stable-channel-update-for-desktop.html\n- https://chromereleases.googleblog.com/2024/09/stable-channel-update-for-desktop_10.html"
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "Prisma Access Browser 128.138.2888.2 and later versions contain the fixes for all CVEs listed above."
+		}
+	],
+	"severity": "HIGH",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": true,
+	"AV": "NETWORK",
+	"AC": "LOW",
+	"PR": "NONE",
+	"UI": "ACTIVE",
+	"C": "product:HIGH subsequent:NONE",
+	"I": "product:HIGH subsequent:NONE",
+	"A": "product:HIGH subsequent:NONE",
+	"product": [
+		"Prisma Access Browser"
+	],
+	"version": [
+		"Prisma Access Browser"
+	],
+	"affected": [
+		"< 128.91.2869.7"
+	],
+	"affected_list": [
+		"Prisma Access Browser"
+	],
+	"fixed": [
+		">= 128.138.2888.2"
+	],
+	"date": "2024-09-11T16:00:00.000Z",
+	"updated": "2024-09-11T16:00:00.000Z"
+}

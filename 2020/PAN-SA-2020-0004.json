@@ -1,0 +1,48 @@
+{
+	"id": "PAN-SA-2020-0004",
+	"title": "Informational: Third-party or open source vulnerabilities that do not affect PAN-OS",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "Palo Alto Networks Product Security Assurance team has evaluated and determined that these third-party or open source vulnerabilities do not have a security impact on PAN-OS, or the scenarios required for successful exploitation do not exist on PAN-OS."
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "No product updates are required for these issues."
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "None"
+		}
+	],
+	"severity": "NONE",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": false,
+	"AV": "PHYSICAL",
+	"AC": "HIGH",
+	"PR": "HIGH",
+	"UI": "REQUIRED",
+	"C": "NONE",
+	"I": "NONE",
+	"A": "NONE",
+	"product": [
+		"PAN-OS"
+	],
+	"version": [
+		"PAN-OS "
+	],
+	"affected": [
+		""
+	],
+	"fixed": [
+		"All"
+	],
+	"date": "2020-05-13T16:00:00.000Z",
+	"updated": "2020-05-13T16:00:00.000Z"
+}

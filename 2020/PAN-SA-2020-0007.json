@@ -1,0 +1,42 @@
+{
+	"id": "PAN-SA-2020-0007",
+	"title": "Informational: Third-party or open source vulnerabilities that do not impact Palo Alto Networks Products",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "The Palo Alto Networks Product Security Assurance team has evaluated and determined that these third-party or open source vulnerabilities do not have any security impact on PAN-OS or that the scenarios required for successful exploitation do not exist on devices running a PAN-OS release.\n\nThe conditions required to exploit jQuery vulnerabilities CVE-2020-11022 and CVE-2020-11023 do not exist in PAN-OS software. However, out of an abundance of caution, the jQuery library was upgraded to a fixed version that does not contain the vulnerable code in PAN-OS 8.1.19, PAN-OS 9.0.13, PAN-OS 9.1.8, and all later PAN-OS versions."
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "No product updates are required for these issues.\n\nThe jQuery library used in PAN-OS 8.1.19, PAN-OS 9.0.13, PAN-OS 9.1.8, and all later PAN-OS versions does not contain the vulnerable code used to exploit vulnerabilities CVE-2020-11022 and CVE-2020-11023.\n"
+		}
+	],
+	"severity": "NONE",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": false,
+	"AV": "PHYSICAL",
+	"AC": "HIGH",
+	"PR": "HIGH",
+	"UI": "REQUIRED",
+	"C": "NONE",
+	"I": "NONE",
+	"A": "NONE",
+	"product": [
+		"PAN-OS"
+	],
+	"version": [
+		"PAN-OS all"
+	],
+	"affected": [
+		""
+	],
+	"fixed": [
+		"All"
+	],
+	"date": "2020-07-08T16:00:00.000Z",
+	"updated": "2022-04-05T16:30:00.000Z"
+}

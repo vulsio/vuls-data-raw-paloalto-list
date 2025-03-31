@@ -1,0 +1,48 @@
+{
+	"id": "PAN-SA-2018-0011",
+	"title": "Information about L1 Terminal Fault findings",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "Palo Alto Networks is aware of recent vulnerability disclosures, known as L1 Terminal Fault, that affect modern CPU architectures. At this time, our findings show that these vulnerabilities pose no increased risk to Palo Alto Networks PAN-OS devices. (CVE-2018-3615, CVE-2018-3620, and CVE-2018-3646). This security advisory will be updated as more information becomes available or if there are changes in the impact of these vulnerabilities.\n\nPAN-OS/Panorama platforms are not directly impacted by these vulnerabilities, as successful exploitation on PAN-OS devices requires an attacker to have already compromised the PAN-OS operating system. We treat any vulnerability that compromises PAN-OS to allow the execution of code as a critical vulnerability. Any such vulnerability would be urgently patched and made available in a PAN-OS maintenance update for all supported versions of PAN-OS. Because of the low risk of the L1 Terminal Fault vulnerability and the relatively high risk of known patch options, the risk and impact must be carefully considered and thoroughly understood.\n\nOur customers’ security is our highest priority. We will continue to closely monitor the situation as it evolves, and to evaluate patching options available from our partner vendors as they become available. We will update this bulletin with updates regarding software patches or other mitigations as they become available. For more background, please see the following: https://researchcenter.paloaltonetworks.com/2018/01/understanding-affected-not-vulnerable/."
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "No action is required at this time. This bulletin will be updated as more information becomes available. We will continue to closely monitor the situation as it evolves, and to evaluate update options."
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "Customers looking to mitigate their exposure to L1 Terminal Fault on their endpoints are encouraged to consult with their equipment manufacturers and operating system vendors on steps to patch or mitigate exposure. We strongly advise customers to patch endpoints at high risk of exploitation. The Traps agent does not detect/prevent this specific type of CPU-level side-channel attack."
+		}
+	],
+	"severity": "NONE",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": true,
+	"AV": "PHYSICAL",
+	"AC": "HIGH",
+	"PR": "HIGH",
+	"UI": "ACTIVE",
+	"C": "product:NONE subsequent:NONE",
+	"I": "product:NONE subsequent:NONE",
+	"A": "product:NONE subsequent:NONE",
+	"product": [
+		"PAN-OS"
+	],
+	"version": [
+		"PAN-OS "
+	],
+	"affected": [
+		""
+	],
+	"fixed": [
+		"All"
+	],
+	"date": "2018-08-17T23:00:00.000Z",
+	"updated": "2018-08-17T23:00:00.000Z"
+}

@@ -1,0 +1,45 @@
+{
+	"id": "PAN-SA-2024-0007",
+	"title": "Prisma Access Browser: Monthly Vulnerability Updates",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "Prisma Access Browser (supersedes Talon Browser) has incorporated the latest upstream Chromium security fixes listed here:\n- https://chromereleases.googleblog.com/2024/07/stable-channel-update-for-desktop.html\n- https://chromereleases.googleblog.com/2024/07/stable-channel-update-for-desktop_23.html\n- https://chromereleases.googleblog.com/2024/07/stable-channel-update-for-desktop_30.html\n- https://chromereleases.googleblog.com/2024/08/stable-channel-update-for-desktop.html"
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "Prisma Access Browser 127.100.2858.4 (supersedes Talon Browser) and all later Prisma Access Browser versions contain the fix for all the listed CVEs."
+		}
+	],
+	"severity": "HIGH",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": true,
+	"AV": "NETWORK",
+	"AC": "LOW",
+	"PR": "NONE",
+	"UI": "ACTIVE",
+	"C": "product:HIGH subsequent:NONE",
+	"I": "product:HIGH subsequent:NONE",
+	"A": "product:HIGH subsequent:NONE",
+	"product": [
+		"Prisma Access Browser"
+	],
+	"version": [
+		"Prisma Access Browser"
+	],
+	"affected": [
+		"< 126.183.2844.1"
+	],
+	"affected_list": [
+		"Prisma Access Browser"
+	],
+	"fixed": [
+		">= 127.100.2858.4"
+	],
+	"date": "2024-08-14T16:00:00.000Z",
+	"updated": "2024-08-14T20:30:00.000Z"
+}

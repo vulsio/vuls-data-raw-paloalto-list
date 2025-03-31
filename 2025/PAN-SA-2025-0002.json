@@ -1,0 +1,48 @@
+{
+	"id": "PAN-SA-2025-0002",
+	"title": "Chromium: Monthly Vulnerability Updates",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "Palo Alto Networks incorporated the following Chromium security fixes into our products:\n\n * https://chromereleases.googleblog.com/2024/12/stable-channel-update-for-desktop_10.html\n * https://chromereleases.googleblog.com/2024/12/stable-channel-update-for-desktop_18.html"
+		}
+	],
+	"solution": [
+		{
+			"lang": "eng",
+			"value": "The following CVEs are fixed in the specified Prisma Access Browser versions and all later Prisma Access Browser versions.\n\n\nCVE              PRISMA ACCESS BROWSER\nCVE-2024-12381   131.140.2943.21\nCVE-2024-12382   131.140.2943.21\nCVE-2024-12692   131.205.2943.22\nCVE-2024-12693   131.205.2943.22\nCVE-2024-12694   131.205.2943.22\nCVE-2024-12695   131.205.2943.22"
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "No workaround or mitigation is available.\n"
+		}
+	],
+	"severity": "MEDIUM",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": true,
+	"AV": "NETWORK",
+	"AC": "LOW",
+	"PR": "NONE",
+	"UI": "ACTIVE",
+	"C": "product:HIGH subsequent:NONE",
+	"I": "product:HIGH subsequent:NONE",
+	"A": "product:HIGH subsequent:NONE",
+	"product": [
+		"Prisma Access Browser"
+	],
+	"version": [
+		"Prisma Access Browser"
+	],
+	"affected": [
+		"< 131.140.2943.21"
+	],
+	"fixed": [
+		">= 131.205.2943.22"
+	],
+	"date": "2025-01-08T17:00:00.000Z",
+	"updated": "2025-01-08T17:00:00.000Z"
+}

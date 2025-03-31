@@ -1,0 +1,69 @@
+{
+	"id": "PAN-SA-2014-0004",
+	"title": "Bash Shell remote code execution (CVE-2014-6271, CVE-2014-7169)",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "Palo Alto Networks has become aware of a remote code execution vulnerability in the Bash shell utility.  This vulnerability (CVE-2014-6271) allows for remote code execution through multiple vectors due to the way Bash is often used on linux systems for processing commands.   Additional information can be found here:  http://seclists.org/oss-sec/2014/q3/650\n\nSuccessful attack requires that a user be able to add environmental variables to the bash environment.  This is possible only for PAN-OS users that successfully authenticate to PAN-OS via SSH.  Exploitation does not directly result in root access to the device, as injected commands are run with the OS privileges of the logged in user.  Critical PAN-OS data is only writeable by the root user.\nThis issue affects This issue affects PAN-OS and Panorama 5.0.14 and earlier; 5.1.9 and earlier; 6.0.5 and earlier; and 6.1.0 and earlier."
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "PAN-OS and Panorama 5.0.15; PAN-OS and Panorama 5.1.10; PAN-OS and Panorama 6.0.6; PAN-OS and Panorama 6.1.1."
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "This attack is mitigated by the fact that successful attack can only be performed by authenticated ssh PAN-OS users.  As an additional mitigation, administrators can disable SSH access on any/all management interfaces configured on the device."
+		}
+	],
+	"severity": "NONE",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"AV": "LOCAL",
+	"AC": "LOW",
+	"PR": "LOW",
+	"UI": "REQUIRED",
+	"C": "NONE",
+	"I": "NONE",
+	"A": "NONE",
+	"product": [
+		"PAN-OS"
+	],
+	"version": [
+		"PAN-OS 6.1",
+		"PAN-OS 6.0",
+		"PAN-OS 5.1",
+		"PAN-OS 5.0"
+	],
+	"affected": [
+		"<= 6.1.0",
+		"<= 6.0.5",
+		"<= 5.1.9",
+		"<= 5.0.14"
+	],
+	"affected_list": [
+		"PAN-OS 6.1.0",
+		"PAN-OS 6.1",
+		"PAN-OS 6.0.5",
+		"PAN-OS 6.0.4",
+		"PAN-OS 6.0.3",
+		"PAN-OS 6.0.2",
+		"PAN-OS 6.0.1",
+		"PAN-OS 6.0.0",
+		"PAN-OS 6.0",
+		"PAN-OS 5.1",
+		"PAN-OS 5.0"
+	],
+	"fixed": [
+		">= 6.1.1.",
+		">= 6.0.6",
+		">= 5.1.10",
+		">= 5.0.15"
+	],
+	"date": "2014-09-24T07:00:00.000Z",
+	"updated": "2014-09-24T07:00:00.000Z"
+}

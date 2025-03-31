@@ -1,0 +1,52 @@
+{
+	"id": "PAN-SA-2022-0004",
+	"title": "Informational: Cortex XDR Agent: Allow List is Visible to Low Privileged Users",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "The Palo Alto Networks Product Security Assurance team is aware of a method that enables a low privileged user on a Windows device to determine which local file system resources are part of the Cortex XDR agent’s configured allow list. These files are not analyzed by the agent and knowledge of the allow list can aid an attacker in environments where the allow list is misconfigured to be overly permissive.\n\nKnowledge of this information does not impact the behavioral threat protection, malware scanning, or other endpoint protection capabilities that detect security events and prevent attacks in areas of the local filesystem that are not part of the allow list."
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "This method is detected by Cortex XDR agents on Windows with content update 630 and later content update versions."
+		}
+	],
+	"severity": "NONE",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": false,
+	"AV": "PHYSICAL",
+	"AC": "HIGH",
+	"PR": "HIGH",
+	"UI": "REQUIRED",
+	"C": "NONE",
+	"I": "NONE",
+	"A": "NONE",
+	"product": [
+		"Cortex XDR Agent",
+		"Cortex XDR Agent"
+	],
+	"version": [
+		"Cortex XDR Agent "
+	],
+	"affected": [
+		"All agents with a content update earlier than CU-630 on Windows"
+	],
+	"affected_list": [
+		"Cortex XDR Agent 7.7",
+		"Cortex XDR Agent 7.6",
+		"Cortex XDR Agent 7.5 CE",
+		"Cortex XDR Agent 7.5",
+		"Cortex XDR Agent 7.4",
+		"Cortex XDR Agent 6.1",
+		"Cortex XDR Agent"
+	],
+	"fixed": [
+		"All agents with CU-630 or a later content update"
+	],
+	"date": "2022-09-14T16:00:00.000Z",
+	"updated": "2022-09-14T16:00:00.000Z"
+}

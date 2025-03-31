@@ -1,0 +1,63 @@
+{
+	"id": "PAN-SA-2016-0017",
+	"title": "Local Privilege Escalation in GlobalProtect App for OS X",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "A vulnerability was recently identified which allows a local user to escalate privileges through the GlobalProtect App for OS X (Ref # 97042).\nLocal users not entitled to the admin context on OS X could use this vulnerability to run processes with higher rights.\nThis issue affects GlobalProtect App for OS X 2.3.4 and earlier; GlobalProtect 3.0.2 and earlier"
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "GlobalProtect App for OS X 2.3.5 and later; GlobalProtect 3.0.3 and later"
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "N/A"
+		}
+	],
+	"severity": "HIGH",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"AV": "LOCAL",
+	"AC": "LOW",
+	"PR": "LOW",
+	"UI": "NONE",
+	"C": "HIGH",
+	"I": "HIGH",
+	"A": "HIGH",
+	"product": [
+		"GlobalProtect App",
+		"GlobalProtect App"
+	],
+	"version": [
+		"GlobalProtect App 3.0",
+		"GlobalProtect App 2.3"
+	],
+	"affected": [
+		"<= 3.0.2 on OS X",
+		"<= 2.3.4 on OS X"
+	],
+	"affected_list": [
+		"GlobalProtect App 3.0.2",
+		"GlobalProtect App 3.0.1",
+		"GlobalProtect App 3.0.0",
+		"GlobalProtect App 3.0",
+		"GlobalProtect App 2.3.4",
+		"GlobalProtect App 2.3.3",
+		"GlobalProtect App 2.3.2",
+		"GlobalProtect App 2.3.1",
+		"GlobalProtect App 2.3.0",
+		"GlobalProtect App 2.3"
+	],
+	"fixed": [
+		">= 3.0.3",
+		">= 2.3.5"
+	],
+	"date": "2016-08-04T20:00:00.000Z",
+	"updated": "2016-08-04T20:00:00.000Z"
+}

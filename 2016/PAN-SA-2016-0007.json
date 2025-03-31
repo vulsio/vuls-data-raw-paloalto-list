@@ -1,0 +1,51 @@
+{
+	"id": "PAN-SA-2016-0007",
+	"title": "User-ID Agent API Access",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "The Palo Alto Networks User-ID agent for Windows implements an API to retrieve the agent’s configuration. This TLS-secured API call returns encrypted credentials to the domain account configured on the User-ID agent, which has read-only rights for Security Event Logs on Domain Controllers. Anyone with access to the User-ID agent Service TCP port can retrieve this encrypted password by invoking this API. (Ref #93349)\nOnly users who possess network level access to the User-ID agent Service TCP port can invoke this API.\nThis issue affects Windows devices running all versions of User-ID agent up to 7.0.3"
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "User-ID agent 7.0.4 and later releases"
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "Only users on the network can access the User-ID agent Service TCP port and make this API call. Palo Alto Networks recommends that the host running the User-ID agent and the Domain Controllers share the same network-level access restrictions. The User-ID agent should be able to reach only the Domain Controllers and only accessible by Palo Alto Networks firewalls to prevent direct access by malevolent entities."
+		}
+	],
+	"severity": "MEDIUM",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"AV": "LOCAL",
+	"AC": "HIGH",
+	"PR": "HIGH",
+	"UI": "NONE",
+	"C": "HIGH",
+	"I": "NONE",
+	"A": "NONE",
+	"product": [
+		"User-ID Agent",
+		"User-ID Agent"
+	],
+	"version": [
+		"User-ID Agent 7.0"
+	],
+	"affected": [
+		"<= 7.0.3"
+	],
+	"affected_list": [
+		"User-ID Agent 7.0"
+	],
+	"fixed": [
+		">= 7.0.4 on Windows"
+	],
+	"date": "2016-05-23T18:00:00.000Z",
+	"updated": "2016-05-23T18:00:00.000Z"
+}

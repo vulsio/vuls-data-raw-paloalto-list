@@ -1,0 +1,61 @@
+{
+	"id": "PAN-SA-2023-0002",
+	"title": "Informational Bulletin: Impact of Rorschach Ransomware",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "The Palo Alto Networks Product Security Assurance team is aware of an article that details a strain of ransomware dubbed “Rorschach.”\n\nWhen removed from its installation directory, the Cortex XDR Dump Service Tool (cydump.exe), which is included with Cortex XDR agent on Windows, can be used to load untrusted dynamic link libraries (DLLs) with a technique known as DLL side-loading. Rorschach ransomware uses a copy of this tool and this technique to evade detection on systems that do not have sufficient endpoint protection.\n\nWhen the Cortex XDR agent is installed on Windows and the Cortex XDR Dump Service Tool process is running from the installation path, it is not possible to side-load DLLs with this technique. The security permissions and protections of the installed Cortex XDR agent prevent it.\n\nThe ransomware is detected and blocked by Cortex XDR agent 7.7 and later versions with CU-240 (released November, 2021) and later content updates. This issue does not represent a product vulnerability risk to customers using Cortex XDR agent. This issue is not applicable to Mac OS and Linux platforms."
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "New versions of Cortex XDR agent will be released to prevent this misuse of our software.\n\nCortex XDR agent content update CU-910 further detects and prevents this DLL side-loading technique.\n\nThis informational bulletin will be updated once ETAs and these software updates are available.\n\nNo updates are planned for Cortex XDR agent 5.0 as it does not have the relevant Behavioral Threat Protection module required to detect this technique."
+		}
+	],
+	"severity": "NONE",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": false,
+	"AV": "PHYSICAL",
+	"AC": "HIGH",
+	"PR": "HIGH",
+	"UI": "REQUIRED",
+	"C": "NONE",
+	"I": "NONE",
+	"A": "NONE",
+	"product": [
+		"Cortex XDR Agent"
+	],
+	"version": [
+		"Cortex XDR Agent 8.0",
+		"Cortex XDR Agent 7.9 CE",
+		"Cortex XDR Agent 7.8",
+		"Cortex XDR Agent 7.5 CE",
+		"Cortex XDR Agent 5.0"
+	],
+	"affected": [
+		"< Agents with content update earlier than CU-240  on Windows",
+		"< Agents with content update earlier than CU-240  on Windows",
+		"< Agents with content update earlier than CU-240  on Windows",
+		"All agents on Windows",
+		"All agents on Windows"
+	],
+	"affected_list": [
+		"Cortex XDR Agent 8.0",
+		"Cortex XDR Agent 7.9 CE",
+		"Cortex XDR Agent 7.8",
+		"Cortex XDR Agent 7.5 CE",
+		"Cortex XDR Agent 5.0"
+	],
+	"fixed": [
+		">= Agents with CU-240 or a later content update on Windows",
+		">= Agents with CU-240 or a later content update on Windows",
+		">= Agents with CU-240 or a later content update on Windows",
+		"",
+		""
+	],
+	"date": "2023-04-04T11:37:00.000Z",
+	"updated": "2023-04-12T16:00:00.000Z"
+}

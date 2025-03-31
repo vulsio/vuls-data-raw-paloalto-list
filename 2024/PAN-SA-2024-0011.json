@@ -1,0 +1,45 @@
+{
+	"id": "PAN-SA-2024-0011",
+	"title": "Chromium: Monthly Vulnerability Updates",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "Palo Alto Networks incorporated the following Chromium security fixes into its products:\n\n- https://chromereleases.googleblog.com/2024/09/stable-channel-update-for-desktop_17.html\n- https://chromereleases.googleblog.com/2024/09/stable-channel-update-for-desktop_24.html\n- https://chromereleases.googleblog.com/2024/10/stable-channel-update-for-desktop.html\n- https://chromereleases.googleblog.com/2024/10/stable-channel-update-for-desktop_8.html"
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "CVE-2024-8904, CVE-2024-8905, CVE-2024-8906, CVE-2024-8907, CVE-2024-8908, and CVE-2024-8909 are fixed in Prisma Access Browser 129.59.2896.5, and all later Prisma Access Browser versions.\nCVE-2024-9120, CVE-2024-9121, CVE-2024-9122, and CVE-2024-9123 are fixed in Prisma Access Browser 129.71.2910.1, and all later Prisma Access Browser versions.\nCVE-2024-7025, CVE-2024-9369, and CVE-2024-9370 are fixed in Prisma Access Browser 129.90.2910.2, and all later Prisma Access Browser versions.\nCVE-2024-9602 and CVE-2024-9603 are fixed in Prisma Access Browser 129.101.2913.3, and all later Prisma Access Browser versions."
+		}
+	],
+	"severity": "HIGH",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": true,
+	"AV": "NETWORK",
+	"AC": "LOW",
+	"PR": "NONE",
+	"UI": "ACTIVE",
+	"C": "product:HIGH subsequent:NONE",
+	"I": "product:HIGH subsequent:NONE",
+	"A": "product:HIGH subsequent:NONE",
+	"product": [
+		"Prisma Access Browser"
+	],
+	"version": [
+		"Prisma Access Browser"
+	],
+	"affected": [
+		"< 129.59.2896.5"
+	],
+	"affected_list": [
+		"Prisma Access Browser"
+	],
+	"fixed": [
+		">= 129.101.2913.3"
+	],
+	"date": "2024-10-09T16:00:00.000Z",
+	"updated": "2024-10-09T16:00:00.000Z"
+}

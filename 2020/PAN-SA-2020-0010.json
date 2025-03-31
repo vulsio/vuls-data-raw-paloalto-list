@@ -1,0 +1,48 @@
+{
+	"id": "PAN-SA-2020-0010",
+	"title": "Informational: Cortex XSOAR: Impact of Linux and Docker vulnerabilities on Cortex XSOAR",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "Cortex XSOAR provides analysts with the option to specify the Docker image to use for running custom scripts and integrations. An analyst who has write permission to scripts or integrations is able to exploit Docker vulnerabilities such as CVE-2019-5736, or Linux kernel vulnerability such as  CVE-2020-14386 to obtain root access on the Cortex XSOAR server.\n\nDemisto Server does not use the docker exec command and does not expose a mechanism for an external attacker to manipulate or provide an attacker-controlled image for execution. Thus, CVE-2019-5736 does not increase exposure to an external attack.\n\nCVE-2019-5021 is a vulnerability in Alpine Linux Docker images where the root password may be NULL. Cortex XSOAR has conducted a scan of all Docker images it maintains in its Docker Hub repository. Following the scan, we concluded that none of the Alpine-based images are affected by CVE-2019-5021 because they do not include either the shadow or linux-pam packages.\nNo Cortex XSOAR Docker images are impacted by CVE-2019-5021."
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "No Palo Alto Networks Cortex XSOAR product updates are required.\n\nUpgrade Docker to the latest version (18.09.2 or later) as provided by your Linux vendor.\n\nUpgrading affected Linux kernels to the latest available patch provided by your Linux vendor."
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "Mitigate CVE-2020-14386 by not running Docker containers as a root user. A non-root user within a container does not have access to raw packets (CAP_NET_RAW capability). Follow the Cortex XSOAR Hardening Guide to configure a non-root internal user for docker: https://docs.paloaltonetworks.com/cortex/cortex-xsoar/5-5/cortex-xsoar-admin/docker/docker-hardening-guide.html .\n\nMitigate CVE-2019-5736 by disabling write access to scripts and integrations to untrusted analysts."
+		}
+	],
+	"severity": "NONE",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"show_cvss_in_header": false,
+	"AV": "PHYSICAL",
+	"AC": "HIGH",
+	"PR": "HIGH",
+	"UI": "REQUIRED",
+	"C": "NONE",
+	"I": "NONE",
+	"A": "NONE",
+	"product": [
+		"Cortex XSOAR"
+	],
+	"version": [
+		"Cortex XSOAR all"
+	],
+	"affected": [
+		""
+	],
+	"fixed": [
+		"All"
+	],
+	"date": "2020-10-14T16:00:00.000Z",
+	"updated": "2020-10-14T16:00:00.000Z"
+}

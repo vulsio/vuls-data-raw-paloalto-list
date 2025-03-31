@@ -1,0 +1,50 @@
+{
+	"id": "PAN-SA-2015-0005",
+	"title": "Device management authentication bypass",
+	"problem": [
+		{
+			"lang": "en",
+			"value": "Devices running PAN-OS 7.0.0 (including Panorama) that are configured to use LDAP for captive portal or device management authentication do not properly perform authentication against the LDAP server in specific cases, leading to an authentication bypass.  There is no issue if you are using Radius or local authentication instead of LDAP or prior versions of PAN-OS; nor does this affect authentication attempts from GlobalProtect clients.\nThis vulnerability can lead to authentication bypass for captive portal or device management login attempts.\nThis issue only affects PAN-OS 7.0.0"
+		}
+	],
+	"solution": [
+		{
+			"lang": "en",
+			"value": "PAN-OS 7.0.1 and subsequent."
+		}
+	],
+	"work_around": [
+		{
+			"lang": "en",
+			"value": "This issue only affects devices and Panorama configured to use LDAP for captive portal or device management authentication.  This issue is strongly mitigated by following security appliance management best practices, requiring that network access to the management interfaces be isolated and strictly limited only to security administration personnel."
+		}
+	],
+	"severity": "CRITICAL",
+	"base_severity": "",
+	"base_score": 0,
+	"threat_severity": "",
+	"AV": "NETWORK",
+	"AC": "LOW",
+	"PR": "NONE",
+	"UI": "NONE",
+	"C": "HIGH",
+	"I": "HIGH",
+	"A": "HIGH",
+	"product": [
+		"PAN-OS"
+	],
+	"version": [
+		"PAN-OS 7.0"
+	],
+	"affected": [
+		"7.0.0"
+	],
+	"affected_list": [
+		"PAN-OS 7.0"
+	],
+	"fixed": [
+		">= 7.0.1"
+	],
+	"date": "2015-07-24T07:00:00.000Z",
+	"updated": "2015-07-24T07:00:00.000Z"
+}
